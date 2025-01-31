@@ -18,7 +18,7 @@ extension LolitaImage {
 
     @NSManaged public var id: UUID?
     @NSManaged public var imagePath: String?
-    @NSManaged public var relationship: LolitaProduct?
+    @NSManaged public var product: LolitaProduct?
 
 }
 

@@ -22,24 +22,24 @@ extension LolitaProduct {
     @NSManaged public var productimage: Data?
     @NSManaged public var size: String?
     @NSManaged public var tags: String?
-    @NSManaged public var relationship: NSSet?
+    @NSManaged public var images: NSSet?
 
 }
 
-// MARK: Generated accessors for relationship
+// MARK: Generated accessors for images
 extension LolitaProduct {
 
-    @objc(addRelationshipObject:)
-    @NSManaged public func addToRelationship(_ value: LolitaImage)
+    @objc(addImagesObject:)
+    @NSManaged public func addToImages(_ value: LolitaImage)
 
-    @objc(removeRelationshipObject:)
-    @NSManaged public func removeFromRelationship(_ value: LolitaImage)
+    @objc(removeImagesObject:)
+    @NSManaged public func removeFromImages(_ value: LolitaImage)
 
-    @objc(addRelationship:)
-    @NSManaged public func addToRelationship(_ values: NSSet)
+    @objc(addImages:)
+    @NSManaged public func addToImages(_ values: NSSet)
 
-    @objc(removeRelationship:)
-    @NSManaged public func removeFromRelationship(_ values: NSSet)
+    @objc(removeImages:)
+    @NSManaged public func removeFromImages(_ values: NSSet)
 
 }
 
