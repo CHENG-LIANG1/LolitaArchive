@@ -43,5 +43,11 @@ struct Helper {
         .padding()
 
     }
+    
+    static func getScreenWidth() -> CGFloat {
+        return UIScreen.main.bounds.width
+    }
+    
+
 
 }

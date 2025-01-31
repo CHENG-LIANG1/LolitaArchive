@@ -7,12 +7,17 @@
 
 import SwiftUI
 import MijickNavigationView
+
 @main
 struct LolitaArchiveApp: App {
+    @StateObject private var dataController = DataController()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .implementNavigationView(config: navigationConfig)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
+
         }
     }
 }

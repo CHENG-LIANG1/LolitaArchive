@@ -16,6 +16,7 @@ struct ContentView: NavigatableView {
     @State private var isPostTapped = false
     @State private var isAddTapped = false
 
+    @Environment(\.managedObjectContext) var moc
 
     @State private var currentBottomSheet = "Add"
     var body: some View {

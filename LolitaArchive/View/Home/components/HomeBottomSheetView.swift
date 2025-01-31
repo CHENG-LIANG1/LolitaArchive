@@ -20,14 +20,13 @@ struct HomeBottomSheetView: View {
         dress.name = "Petty"
         dress.tags = "XXX, XXX"
         try? moc.save()
-        
     }
     
     var body: some View {
         VStack {
             Button {
                 showImagePicker = true
-                addDress()
+         
             } label: {
                 Text("ddd")
             }
@@ -36,6 +35,7 @@ struct HomeBottomSheetView: View {
         .sheet(isPresented: $showImagePicker) {
             ImagePickerView(sourceType: .photoLibrary, allowsMultipleSelection: false) { image in
                 self.image = image
+                addDress()
             }
         }
    
